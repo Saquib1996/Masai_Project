@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<style>
+    #container{
+        width: 400px;
+        height: 500px;
+        margin: auto;
+        margin-top: 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding-top: 20px;
+    }
+    #container > div{
+        width: 300px;
+        height: 50px;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+    }
+    .box1>div{
+
+        width: 70px;
+        height: 45px;
+        margin: auto;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 10px;
+    }
+   div h1{
+        text-align: center;
+        margin: auto;
+    }
+    .box1>div:last-child{
+        background-color: black;
+        color: white;
+    }
+    #container>div:first-child{
+        border-radius: 10px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+
+</style>
+<body>
+    <div id="container">
+        <div></div>       
+        <div class="box1">
+            <div><h1>1</h1></div>
+            <div><h1>2</h1></div>
+            <div><h1>3</h1></div>
+            <div><h1>+</h1></div>
+        </div>
+        <div class="box1">
+            <div><h1>4</h1></div>
+            <div><h1>5</h1></div>
+            <div><h1>6</h1></div>
+            <div><h1>-</h1></div>
+        </div>
+        <div class="box1">
+            <div><h1>7</h1></div>
+            <div><h1>8</h1></div>
+            <div><h1>9</h1></div>
+            <div><h1>*</h1></div>
+        </div>
+        <div class="box1">
+            <div style="background-color: red;"><h1 style="color: white;">C</h1></div>
+            <div><h1>0</h1></div>
+            <div style="background-color: black;"><h1 style="color: white;">=</h1></div>
+            <div><h1>/</h1></div>
+        </div>
+    </div>
+</body>
+</html>
