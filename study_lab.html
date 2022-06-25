@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        width: 100%;
+        height: 600px;
+    }
+    #heading{
+        width: 100%;
+        height: 60px;
+        display: flex; 
+        justify-content: space-around;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;    
+    }
+    #heading > div:first-child{
+        width: 10%;
+        height: 60px;
+        background-color: blue;
+        padding: 0px 10px 0px 10px;
+    }
+    #heading > div:last-child{
+        width: 60%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;    
+    }
+    h1{
+        margin-top: 10px;
+        color: white;
+    }
+    div>h3:first-child{
+        color: blue;
+    }
+    #body{
+        width: 100%;
+        height: 590px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }
+    #body>div{
+        width: 45%;
+        height: 590px;
+    }
+    h4{
+        margin-top: 60px;
+        margin-left: 45px;
+        color: blue;
+    }  
+   #body p+p{
+        font: 20px;
+        margin-left: 45px; 
+        color: grey; 
+    }
+    #body>div>p{
+        font-size: 30px;
+        margin-left: 45px;
+        font-weight: 900;
+    }
+    #body img{
+        margin-left: 45px;
+    }
+    img+p{
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    #body1>div{
+        width: 100%;
+        height: 280px;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 22px;
+        
+    }
+    #body1 img{
+        height: 60px;
+        width: 60px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #body1>div>div{
+        width: 47%;
+        margin-left: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+    }
+    h2{
+        margin-left: 20px;
+    }
+    h2+p{
+        margin-left: 20px;
+        color: grey;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="heading">
+            <div><h1>StudyLab</h1></div>
+            <div>
+               <h3>Home</h3>
+               <h3>About</h3>
+               <h3>Courses</h3>
+               <h3>Instructor</h3>
+               <h3>Blog</h3>
+               <h3>Contact</h3>
+            </div>
+        </div>
+        <div id="body">
+            <div>
+                <h4>Welcome To StudyLab</h4>
+                <p>Are StudyLab An Online <br> Learning Center</p>
+                <p style="font-size:16px ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia excepturi repudiandae non asperiores tempora veritatis, aut quidem odio reiciendis exercitationem molestias nemo architecto maxime assumenda sint hic obcaecati animi ratione.</p>
+                <p style="font-size:16px ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia excepturi repudiandae non asperiores tempora veritatis, aut quidem odio reiciendis exercitationem molestias nemo architecto maxime assumenda sint hic obcaecati animi ratione Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet consectetur adipisicing elitLorem.</p>
+                <div style="display: flex;"> 
+                    <img src="data:image/jpeg;base64,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" alt="Error">
+                    <p>Learn anything from the StudyLab Watch video</p>
+                </div>
+            </div>
+            <div id="body1">
+                <div>
+                    <div>
+                        <img src="https://avatars.githubusercontent.com/u/52875133?s=200&v=4" alt="Error">
+                        <h2>Top Quality Content</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laudantium dolore eum autem incidunt! Rerum voluptatibus  explicabo error.</p>
+                    </div>
+                    <div>
+                        <img src="https://avatars.githubusercontent.com/u/52875133?s=200&v=4" alt="Error">
+                        <h2>Highly Skilled Instructor</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laudantium dolore eum autem incidunt! Rerum voluptatibus  explicabo error.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                         <img src="https://avatars.githubusercontent.com/u/52875133?s=200&v=4" alt="Error">
+                         <h2>World Class and Quiz</h2>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laudantium dolore eum autem incidunt! Rerum voluptatibus  explicabo error.</p>
+                    </div>
+                    <div>
+                         <img src="https://avatars.githubusercontent.com/u/52875133?s=200&v=4" alt="Error">
+                         <h2>Get Certfied</h2>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat laudantium dolore eum autem incidunt! Rerum voluptatibus  explicabo error.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
